@@ -1,0 +1,31 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=image/*;video/*;
+Actions=to_jpg;to_png;to_jxl;to_webp;to_mp3;
+X-KDE-Submenu=File Converter
+
+[Desktop Action to_jpg]
+Name=Convert to JPG
+Icon=image-jpeg
+Exec=$HOME/.local/bin/file-converter.sh jpg %F
+
+[Desktop Action to_png]
+Name=Convert to PNG
+Icon=image-png
+Exec=$HOME/.local/bin/file-converter.sh png %F
+
+[Desktop Action to_jxl]
+Name=Convert to JXL
+Icon=image-x-generic
+Exec=$HOME/.local/bin/file-converter.sh jxl %F
+
+[Desktop Action to_webp]
+Name=Convert to WEBP
+Icon=image-webp
+Exec=$HOME/.local/bin/file-converter.sh webp %F
+
+[Desktop Action to_mp3]
+Name=Convert to MP3
+Icon=audio-mpeg
+Exec=$HOME/.local/bin/file-converter.sh mp3 %F
